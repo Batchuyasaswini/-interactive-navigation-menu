@@ -1,0 +1,85 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-item.home:hover {
+    background-color: #ff0000;
+}
+
+.nav-item.about:hover {
+    background-color: #00ff00;
+}
+
+.nav-item.services:hover {
+    background-color: #0000ff;
+}
+
+.nav-item.contact:hover {
+    background-color: #ff00ff;
+}
+
+section {
+    height: 100vh;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#home {
+    background-color: #ffcccc;
+}
+
+#about {
+    background-color: #ccffcc;
+}
+
+#services {
+    background-color: #ccccff;
+}
+
+#contact {
+    background-color: #ffccff;
+}
+
+.scrolled {
+    background-color: #111 !important;
+}
+
+.scrolled .nav-item {
+    color: #ddd !important;
+}
